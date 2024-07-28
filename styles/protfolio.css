@@ -148,6 +148,23 @@
 
 }
 
+.resume-column{
+  padding: 20px;
+  justify-content: center;
+ 
+}
+
+.resume-column-title{
+  padding: 20px;
+  justify-content: center;
+}
+.experience{
+  box-shadow: 0px 6px 50px 0px aqua;
+  padding: 20px;
+  border: 2px solid antiquewhite;
+}
+
+
 /* footer styles  */
 footer{
   padding: 130px 230px ;
@@ -156,9 +173,12 @@ footer{
 }
 .footer-column{
  width: 50%; 
+
+
+ 
 }
 
-footer input[type="text"] fokokter input[type="email"],footer textarea
+footer input[type="text"]  input[type="email"],footer textarea
 {
   height: 64px;;border-radius: 5px;
   background-color: white;
@@ -168,5 +188,56 @@ footer input[type="text"] fokokter input[type="email"],footer textarea
   margin-bottom:24px;
   border: none;
 
+}
+.input-file{
+  display:grid;
+  gap: 10px;
+}
 
+/* responsive media quary  */
+.hide{
+  display:none;
+}
+@media screen and (max-width:576px){
+  /* Banner part  */
+  .banner{
+    margin: 20px;
+ }
+  .header{
+   background-image: none;
+  }
+  .banner-profile-pic{
+   width: 100%;
+  }
+
+    .skills-container ,  
+    .resume-container ,
+     footer , 
+    .about-items , 
+    .banner,
+    nav ,
+    nav>ul 
+    {
+    flex-direction: column;
+  }
+
+  nav>ul {
+    gap: 10px;
+  }
+  .btn-primary{
+    margin-bottom: 20px;
+  }
+  .secondary-bg{
+    margin: 0;
+    padding: 10px;
+  }
+         /* footer part  */
+  .footer-column{
+    width: 100%; 
+   }
+   #message{
+    width: 92%;
+  }
+
+  
 }
